@@ -9,9 +9,9 @@ from time import sleep
 reload(sys)
 sys.setdefaultencoding("utf-8")
 redis = r.StrictRedis(host='localhost', port=6379, db=0)
-token = '' # Your Token Here
+token = '262989901:AAHC4HZtopqfIG-lTUf3vUHoyELTyVktZsE' # Your Token Here
 bot = telebot.TeleBot(token)
-admin = 224976780
+admin = 275387751
 bot.send_message(admin,'Bot Started')
 
 #Start Project!
@@ -31,7 +31,7 @@ def start(m):
   markup.add(robots,Web)
   markup.add(Order,Jobs,Support)
   bot.send_message(m.chat.id,'''
-*Welcome to Umbrella Projects Team robot...*
+*Welcome to Celuna Team bot...*
 
 This robot is for Provide Description, Help, Support, Presentation for Products and Services and more...
 ''',reply_markup=markup,parse_mode='markdown')
@@ -56,22 +56,9 @@ def bc(m):
 @bot.message_handler(regexp='^Umbrella Projects')
 def um(m):
    bot.send_message(m.chat.id,'''
-*Umbrella Projects Team...*
+*Celuna Team...*
 
-⛱The team was opened on 12.15.2015 by Engineer Shayan Ahmadi.
 
-*☂Products & Services:*
-     API Web Services
-     Online Web Tools
-     Web Masters Plugins
-     Telegram Robots
-     Computer Programs
-     Mobile Applications
-     Website Design
-     Scripting
-     and more...
-
-_🌂Umbrella is Best Iranian Programming Team_
 ''',parse_mode='markdown')
 
 ####################
